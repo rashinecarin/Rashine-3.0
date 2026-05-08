@@ -103,17 +103,69 @@
       </div>
     </section>
 
-    <section id="journal" class="journal-section">
-  <h2 class="section-title">Journal</h2>
+    <!-- JOURNAL SECTION -->
+<section class="journal-section">
+  <h2 class="journal-title">My Journal</h2>
 
-  <div class="journal-timeline">
-    <div class="journal-entry"><img src="images/Unknown-6.jpg" alt=""></div>
-    <div class="journal-entry"><img src="images/Unknown-7.jpg" alt=""></div>
-    <div class="journal-entry"><img src="images/Unknown-8.jpg" alt=""></div>
-    <div class="journal-entry"><img src="images/Unknown-9.jpg" alt=""></div>
-    <div class="journal-entry"><img src="images/Unknown-10.jpg" alt=""></div>
+  <div class="journal-container">
+
+    <div class="journal-card">
+        <img src="images/Unknown-6.jpg" alt="">
+    </div>
+
+    <div class="journal-card">
+        <img src="images/Unknown-7.jpg" alt="">
+    </div>
+
+    <div class="journal-card">
+        <img src="images/Unknown-8.jpg" alt="">
+    </div>
+
+    <div class="journal-card">
+        <img src="images/Unknown-9.jpg" alt="">
+    </div>
+
+    <div class="journal-card">
+        <img src="images/Unknown-10.jpg" alt="">
+    </div>
+
+</div>
+
+  
+
+    <div class="journal-card">
+      <h3>Journal Entry 3</h3>
+      <p>
+        Short preview text to reduce excessive scrolling.
+      </p>
+
+      <button class="read-more-btn" onclick="toggleContent(this)">
+        Read More
+      </button>
+
+      <div class="full-content">
+        <p>
+          Full journal content for entry 3.
+        </p>
+      </div>
+    </div>
+
   </div>
 </section>
+
+<script>
+function toggleContent(button) {
+    const content = button.nextElementSibling;
+
+    if (content.style.display === "block") {
+        content.style.display = "none";
+        button.innerText = "Read More";
+    } else {
+        content.style.display = "block";
+        button.innerText = "Show Less";
+    }
+}
+</script>
 
 <section id="certificates" class="certificate-section">
   <h2 class="section-title">Certificates</h2>

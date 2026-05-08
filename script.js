@@ -130,3 +130,16 @@ function closeJournal() {
 
 journalClose.addEventListener("click", closeJournal);
 journalBackdrop.addEventListener("click", closeJournal);
+
+
+function toggleContent(button) {
+    const content = button.nextElementSibling;
+
+    if (content.style.display === "block") {
+        content.style.display = "none";
+        button.innerText = "View Image";
+    } else {
+        content.style.display = "block";
+        button.innerText = "Hide";
+    }
+}
